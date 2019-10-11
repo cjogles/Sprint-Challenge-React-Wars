@@ -24,15 +24,25 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+    React JS is a javascript library created to build User Interfaces more easily. No more and no less. React attempts to do this by using classes and functions to create components that can hold state and pass down state as props to their children. React uses a virtual DOM to check the real DOM for discrepancies or changes in code and then only updates the changes instead of re-rendering the entire web page over and over again. This management of data speeds up processing time and is the entire reason why the facebook development team created the library. 
 
-- [ ] Describe state.
+- [x] What does it mean to _think_ in react?
 
-- [ ] Describe props.
+    React is a paradigm to think in. A component based paradigm. The objective is to mentally create your project into seperate parts, compartmentalizing each part to do one tiny specefic job, and make sure each part does it job really well, and then compose them all together to create  a web page. Then the virtual DOM can check the DOM and render any changes. 
 
-- [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+- [x] Describe state.
+
+    State is a variable defined inside a component. State is similar to props, but if private and fully controlled by the component. State is often called local or encapsulated. It is not accessible to any component other than the one that owns and sets it. 
+
+- [x] Describe props.
+
+    A component may choose to pass its state down as props to its child components: components are like JavaScript functions. They accept arbitrary inputs(called “props”) and return React elements describing what should appear on the screen.
+
+- [x] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+    Side effects are things that happen outside of the functions scope that is executing. For instance web content being rendered to the DOM, API calls etc. The way to synchronize side effects to state and prop changes is by using the web hook (aka react component method) and then tell the function specefically to behave a certain way. 
 
 ## Project Set Up
 
